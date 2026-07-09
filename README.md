@@ -104,7 +104,7 @@ Analyzed 284K+ transactions with severe class imbalance → **99.2% ROC-AUC**, 8
 </td>
 <td width="50%" valign="top">
 
-**📰 News Summarizer & Sentiment Analyzer**
+**📰 news-summarizer-sentiment-analyzer**
 
 `Python` `NLTK` `VADER` `TextBlob`
 
