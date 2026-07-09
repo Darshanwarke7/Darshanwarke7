@@ -1,0 +1,76 @@
+<svg width="100%" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c29">
+        <animate attributeName="stop-color" values="#0f0c29;#1b1140;#302b63;#0f0c29" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#302b63">
+        <animate attributeName="stop-color" values="#302b63;#24243e;#1b1140;#302b63" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#24243e">
+        <animate attributeName="stop-color" values="#24243e;#0f0c29;#302b63;#24243e" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2E9EF7" stroke-width="0.4" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="260" fill="url(#bgGrad)"/>
+  <rect width="1200" height="260" fill="url(#grid)"/>
+
+  <!-- scanning laser line -->
+  <rect x="-4" y="0" width="3" height="260" fill="#2E9EF7" opacity="0.55">
+    <animate attributeName="x" values="-4;1200" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- floating particles -->
+  <circle cx="90" cy="210" r="3" fill="#2E9EF7" opacity="0.7">
+    <animate attributeName="cy" values="210;40;210" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0.1;0.7" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="220" cy="60" r="2.5" fill="#6A11CB" opacity="0.6">
+    <animate attributeName="cy" values="60;220;60" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1000" cy="200" r="3" fill="#2E9EF7" opacity="0.7">
+    <animate attributeName="cy" values="200;50;200" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0.1;0.7" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="70" r="2" fill="#6A11CB" opacity="0.5">
+    <animate attributeName="cy" values="70;220;70" dur="6.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="6.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="130" r="2" fill="#ffffff" opacity="0.4">
+    <animate attributeName="cy" values="130;30;130" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.05;0.4" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="140" r="2.5" fill="#ffffff" opacity="0.4">
+    <animate attributeName="cy" values="140;230;140" dur="7.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.05;0.4" dur="7.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- name -->
+  <text x="600" y="130" font-family="'Courier New', monospace" font-size="58" font-weight="700" fill="#ffffff" text-anchor="middle" filter="url(#glow)">
+    DARSHAN WARKE
+  </text>
+
+  <!-- animated underline -->
+  <rect x="600" y="150" width="0" height="3" fill="#2E9EF7">
+    <animate attributeName="width" from="0" to="420" dur="1.8s" begin="0.2s" fill="freeze"/>
+    <animate attributeName="x" from="600" to="390" dur="1.8s" begin="0.2s" fill="freeze"/>
+  </rect>
+
+  <!-- subtitle -->
+  <text x="600" y="195" font-family="'Courier New', monospace" font-size="19" fill="#8ab4f8" text-anchor="middle" letter-spacing="3">
+    AI ENGINEER • MACHINE LEARNING • COMPUTER VISION • NLP
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="1s" fill="freeze"/>
+  </text>
+</svg>
