@@ -23,7 +23,7 @@ darshan@ml-engineer:~$ cat education.txt
 > PG Certification — Data Science & Analytics (Imarticus Learning)
 
 darshan@ml-engineer:~$ python skills.py --top
-> ["Computer Vision", "NLP", "Explainable AI", "Production ML"]
+> ["Computer Vision", "NLP", "Explainable AI", "Production ML", "LLM Agents"]
 
 darshan@ml-engineer:~$ status --current
 > Seeking: Data Scientist / ML Engineer role
@@ -92,6 +92,17 @@ darshan@ml-engineer:~$ status --current
 ### 📌 Featured Projects
 
 <table>
+<tr>
+<td width="100%" valign="top">
+
+**🤖 [Multi-Agent Research & Report Generator](https://github.com/Darshanwarke7/Multi_agent_report_generator)**
+
+`Python` `LLM Agents` `Groq / Llama 3.3` `Flask` `SQLite`
+
+A 3-agent pipeline (Researcher → Summarizer → Report Writer) that researches any topic on the web, condenses raw findings, and generates a cited, formatted report. Includes per-agent retry logic, token/cost tracking, and a live-status dashboard.
+
+</td>
+</tr>
 <tr>
 <td width="50%" valign="top">
 
