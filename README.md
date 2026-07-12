@@ -93,7 +93,7 @@ darshan@ml-engineer:~$ status --current
 
 <table>
 <tr>
-<td width="100%" valign="top">
+<td colspan="2" valign="top">
 
 **🤖 [Multi-Agent Research & Report Generator](https://github.com/Darshanwarke7/Multi_agent_report_generator)**
 
